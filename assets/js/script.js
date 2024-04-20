@@ -2,13 +2,13 @@
 // fuction to open word site in full screen
 
 const toggler = document.getElementById('toggler');
-const post = document.getElementById('post');
 
-if (!document.fullscreenEnabled) {
+
+/* if (!document.fullscreenEnabled) {
     toggler.parentNode.removedChild(toggler);
     throw new Error('Helskärm är ej tillgänglig');
 }
-
+ */
 toggler.addEventListener('click', () => {
     if(document.fullscreenElement) {
         document.exitFullscreen();
