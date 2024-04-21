@@ -1,7 +1,7 @@
 
 // fuction to open word site in full screen
 
-const toggler = document.getElementById('toggler');
+/* const toggler = document.getElementById('toggler'); */
 
 
 /* if (!document.fullscreenEnabled) {
@@ -9,7 +9,7 @@ const toggler = document.getElementById('toggler');
     throw new Error('Helskärm är ej tillgänglig');
 }
  */
-toggler.addEventListener('click', () => {
+/* toggler.addEventListener('click', () => {
     if(document.fullscreenElement) {
         document.exitFullscreen();
         
@@ -26,14 +26,25 @@ document.addEventListener('fullscreenchange', () => {
         toggler.textContent= 'Helskärm';
     }
 })
-
+ */
 
 // ord glow
+
+
+
+
+
+
+// fuction to make words change color
 
 const words =document.querySelectorAll('.mm-word');
 
 words.forEach(word => {
     word.addEventListener('click', event => {
+        
         word.classList.toggle('word-active')
+        
     })
 })
+
+
